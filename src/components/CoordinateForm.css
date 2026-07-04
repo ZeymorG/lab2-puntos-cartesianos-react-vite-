@@ -1,0 +1,24 @@
+.coordinate-form {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+}
+
+.punto-grupo {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.5rem;
+}
+
+.punto-grupo label {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.punto-grupo input {
+  width: 80px;
+  padding: 0.3rem;
+}
