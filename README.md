@@ -1,8 +1,25 @@
-# Cómo usar estos archivos
+# Punto Cartesiano — Operaciones entre dos puntos
 
-1. Crea tu proyecto: `npm create vite@latest punto-cartesiano -- --template react`
-2. Entra: `cd punto-cartesiano` y corre `npm install`
-3. Copia el contenido de esta carpeta `src/` DENTRO de tu `src/` generado por Vite,
-   reemplazando el App.jsx y App.css que trae por defecto.
-4. Los archivos main.jsx e index.css que ya trae Vite NO se tocan (déjalos como están).
-5. Corre `npm run dev` y abre la URL que te indique la terminal.
+Aplicación Front-End desarrollada con **React** y **Vite** que permite calcular operaciones geométricas básicas entre dos puntos del plano cartesiano.
+
+##  Descripción
+
+La aplicación permite ingresar las coordenadas de dos puntos:
+
+- Punto A = (x1, y1)
+- Punto B = (x2, y2)
+
+Y calcula automáticamente:
+
+- **Distancia** entre los dos puntos
+- **Punto medio** del segmento que los une
+- **Pendiente** de la recta que pasa por ambos puntos
+3
+
+##  Fórmulas implementadas
+
+| Operación | Fórmula |
+| Distancia | `d = √((x2 - x1)² + (y2 - y1)²)` |
+| Punto medio | `M = ((x1 + x2) / 2, (y1 + y2) / 2)` |
+| Pendiente | `m = (y2 - y1) / (x2 - x1)` — indefinida si `x1 = x2` (recta vertical) |
+
